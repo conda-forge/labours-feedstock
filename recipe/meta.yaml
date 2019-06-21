@@ -1,5 +1,5 @@
 {% set name = "labours" %}
-{% set version = "10.1.0" %}
+{% set version = "10.2.0" %}
 
 package:
   name: "{{ name|lower }}"
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://github.com/src-d/hercules/archive/v{{ version }}.tar.gz
-  sha256: d152b34843452f62e9e4d4e287552b5505c2f4fd7289356f6aed0afe209e08b3
+  sha256: 3e5a8ee5f048643aef4101d70809c089b8ca91b5d95636d68961da7a64555ea8
   patches:
     - 0001_win_setup_py_handle_os_error.patch  # [win]
 
@@ -51,7 +51,6 @@ test:
     - bunzip2 test.pb.bz2
     - labours -i test.pb -o test-bpr -m burndown-project
     - labours -i test.pb -o test-def -m devs-efforts
-    - labours -i test.pb -o test-cma -m churn-matrix
     - labours -i test.pb -o test-ovn -m old-vs-new
     - labours -i test.pb -o test-own -m ownership
 
