@@ -51,7 +51,6 @@ test:
     - bunzip2 test.pb.bz2
     - labours -i test.pb -o test-bpr -m burndown-project
     - labours -i test.pb -o test-def -m devs-efforts
-    - labours -i test.pb -o test-cma -m overwrites-matrix
     - labours -i test.pb -o test-ovn -m old-vs-new
     - labours -i test.pb -o test-own -m ownership
 
