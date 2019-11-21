@@ -1,5 +1,5 @@
 {% set name = "labours" %}
-{% set version = "10.5.2" %}
+{% set version = "10.5.3" %}
 
 package:
   name: "{{ name|lower }}"
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://github.com/src-d/hercules/archive/v{{ version }}.tar.gz
-  sha256: fdcae84d088bec43bf2d3ecbadc379b3ed14fc041c9762772633fd5285e591c5
+  sha256: 6079d4cc07cf8adebc25e0f758da03dde997c9319914a2664ed9ac632d154bfd
   patches:
     - 0001_win_setup_py_handle_os_error.patch  # [win]
 
